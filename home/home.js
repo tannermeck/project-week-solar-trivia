@@ -8,6 +8,7 @@ form.addEventListener('submit', (e) => {
     const formDataObj = new FormData(form);
     const createdPlayer = createUser(formDataObj);
     setUser(createdPlayer);
+    window.location = 'links';
 });
 
 
