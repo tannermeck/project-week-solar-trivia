@@ -17,28 +17,39 @@
         <a href="./about/index.html">About the developers</a>
     </header>
     <main>
-        <form id="user-form">
-        <label for="name">
-            <input type="text" placeholder="enter user name" name="name">
-        </label>
-        <input type="radio" name="race" id="alien" value="alien">
-            <label for="alien">Alien</label>
-            <img src="./assets/alien.png">
-        <input type="radio" name="race" id="humanoid" value="humanoid">
-            <label for="humanoid">Humanoid</label>
-            <img src="./assets/humanoid.png">
-        <input type="radio" name="race" id="bug" value="bug">
-            <label for="bug">Bug</label>
-            <img src="assets/bug.png">
 
-        <button type="submit">Test your knowledge!</button>
-        </form>
-        <h1>Rules to the game</h1>
-        <p>We have questions, you get to choose one of four answers. Are you correct? Find out!</p>
+        <section id="form">
 
+            <form id="user-form">
+                <label for="name">
+                    <input type="text" placeholder="enter user name" name="name">
+                </label>
+                <input type="radio" name="race" id="alien" value="alien">
+                    <label for="alien">Alien</label>
+                    <img src="./assets/alien.png">
+                <input type="radio" name="race" id="humanoid" value="humanoid">
+                    <label for="humanoid">Humanoid</label>
+                    <img src="./assets/humanoid.png">
+                <input type="radio" name="race" id="bug" value="bug">
+                    <label for="bug">Bug</label>
+                    <img src="assets/bug.png">
+                <button type="submit">Test your knowledge!</button>
+                </form>
+                
+        </section>
+
+        <section id="rules">
+            <h1>Rules to the game</h1>
+            <p>We have questions, you get to choose one of four answers. Are you correct? Find out!</p>
+            <p>Jump into our space ship and explore into unknown territory by helping us solve the mysteries of our solar system.
+            </p>
+        </section>
+        
     </main>
 
     <footer>
+        <p>Space Trivia || Final Project &copy; 2021<br>
+            Tanner Meck || Simon Kaine || Paul Brubaker || Greg Gilliam</p>
     </footer>
 
     <script type="module" src="./home/home.js"></script>
