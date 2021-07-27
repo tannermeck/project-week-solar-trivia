@@ -29,6 +29,6 @@ answerForm.addEventListener('submit', (e) => {
     if (planet.correct === +selection){
         incrementScore();
     } else {
-        console.log('you-lose');
+        alert('YOU LOST');
     } getProfile();
 });
