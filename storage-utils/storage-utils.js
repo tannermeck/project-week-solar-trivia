@@ -18,3 +18,4 @@ export function getProfile() {
     avatar.src = `../assets/${user.race}.png`;
     scoreLi.textContent = user.score;
 }
+
