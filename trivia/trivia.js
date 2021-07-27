@@ -1,4 +1,4 @@
-import { getProfile, incrementScore } from '../storage-utils/storage-utils.js';
+import { getProfile, incrementScore, getUser, setUser } from '../storage-utils/storage-utils.js';
 import planets from '../data/data.js';
 import { getById } from '../storage-utils/helpers.js';
 
@@ -25,10 +25,22 @@ for (let choice of planet.choices){
 answerForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const selected = new FormData(answerForm);
-    const selection = selected.get('answer');
-    if (planet.correct === +selection){
+    const selection = +selected.get('answer');
+    const results = document.getElementById('results');
+    answerForm.classList.add('hide');
+    if (planet.correct === selection){
         incrementScore();
+        results.textContent = 'You guessed right!';
     } else {
-        alert('YOU LOST');
-    } getProfile();
+        const correctAnswer = getById(planet.choices, planet.correct).answer;
+        const selectionAnswer = getById(planet.choices, selection).answer;
+        results.textContent = `You guessed ${selectionAnswer}, the correct answer is ${correctAnswer}`;
+    }
+    getProfile();
+    const link = document.getElementById('return');
+    link.classList.remove('hide');
+    const user = getUser();
+    user.completed.push(planet.id);
+    setUser(user);
 });
+

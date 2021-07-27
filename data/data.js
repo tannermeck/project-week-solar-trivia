@@ -11,7 +11,7 @@ const sun = {
         answer: '279,000',
     }, {
         id: 3,
-        answer: '180,000'
+        answer: '1,800,000'
     }, {
         id: 4,
         answer: '1,300,000'
