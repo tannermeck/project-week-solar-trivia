@@ -17,6 +17,7 @@ for (let choice of planet.choices){
     radio.type = 'radio';
     radio.value = choice.id;
     radio.name = 'answer';
+    radio.required = 'required';
     span.textContent = choice.answer;
     const label = document.createElement('label');
     label.append(radio, span);
@@ -36,11 +37,11 @@ answerForm.addEventListener('submit', (e) => {
         const selectionAnswer = getById(planet.choices, selection).answer;
         results.textContent = `You guessed ${selectionAnswer}, the correct answer is ${correctAnswer}`;
     }
-    getProfile();
     const link = document.getElementById('return');
     link.classList.remove('hide');
     const user = getUser();
     user.completed.push(planet.id);
     setUser(user);
+    getProfile();
 });
 
