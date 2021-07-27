@@ -3,6 +3,6 @@ export function createUser(formData) {
         name: formData.get('name'),
         race: formData.get('race'),
         score: 0,
-        completed: [],
+        completed: []
     };
 }

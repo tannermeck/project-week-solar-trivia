@@ -1,4 +1,4 @@
-import { getProfile, incrementScore } from '../storage-utils/storage-utils.js';
+import { getProfile, incrementScore, getUser, setUser } from '../storage-utils/storage-utils.js';
 import planets from '../data/data.js';
 import { getById } from '../storage-utils/helpers.js';
 
@@ -35,10 +35,12 @@ answerForm.addEventListener('submit', (e) => {
         const correctAnswer = getById(planet.choices, planet.correct).answer;
         const selectionAnswer = getById(planet.choices, selection).answer;
         results.textContent = `You guessed ${selectionAnswer}, the correct answer is ${correctAnswer}`;
-
     }
     getProfile();
     const link = document.getElementById('return');
     link.classList.remove('hide');
+    const user = getUser();
+    user.completed.push(planet.id);
+    setUser(user);
 });
 

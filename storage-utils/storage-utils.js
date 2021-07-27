@@ -1,4 +1,5 @@
 export const USER = 'USER';
+export const LEADERBOARD = 'LEADERBOARD';
 
 export function getUser() {
     return JSON.parse(localStorage.getItem(USER));
@@ -24,3 +25,10 @@ export function incrementScore(){
     setUser(user);
 }
 
+export function getLeaderboard() {
+    return JSON.parse(localStorage.getItem(LEADERBOARD) || '[]');
+}
+
+export function setLeaderboard(leaderboard) {
+    localStorage.setItem(LEADERBOARD, JSON.stringify(leaderboard));
+}
