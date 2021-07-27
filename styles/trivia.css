@@ -9,3 +9,7 @@ ul li {
 ul {
     display: flex;
 }
+
+.hide {
+    display: none;
+}
