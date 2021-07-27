@@ -18,3 +18,9 @@ export function getProfile() {
     avatar.src = `../assets/${user.race}.png`;
     scoreLi.textContent = user.score;
 }
+export function incrementScore(){
+    const user = getUser();
+    user.score += 1;
+    setUser(user);
+}
+
