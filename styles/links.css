@@ -9,5 +9,25 @@ ul {
     display: flex;
 }
 body {
-    background-image: url('../assets/links-background.jpg');
+    max-width: 1100px;
 }
+
+@media (min-width: 1100px) {
+
+    #container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    background-image: url(../assets/links-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    /* min-width: 100vw; */
+};
