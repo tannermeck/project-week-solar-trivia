@@ -3,12 +3,13 @@ import planets from '../data/data.js';
 import { getById } from '../storage-utils/helpers.js';
 
 getProfile();
-
+const title = document.getElementById('title');
 const question = document.getElementById('question');
 const answerForm = document.getElementById('answer-form');
 const searchParams = new URLSearchParams(window.location.search);
 
 const planet = getById(planets, +searchParams.get('planetId'));
+title.textContent = planet.title;
 question.textContent = planet.question;
 
 for (let choice of planet.choices){
