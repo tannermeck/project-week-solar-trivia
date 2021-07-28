@@ -1,11 +1,27 @@
 body {
-    background-image: url(../assets/pillars_of_creation.jpg);
+    box-sizing: border-box;
+    
 }
 
+@media (min-width: 1200px) {
+
+    #container {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
 
 img {
     height: 100px;
     border: 1px solid white;
     border-radius: 50%;
+}
+
+html {
+    background-image: url(../assets/pillars_of_creation.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
