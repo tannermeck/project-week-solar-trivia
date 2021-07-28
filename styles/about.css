@@ -1,0 +1,11 @@
+body {
+    background-image: url(../assets/pillars_of_creation.jpg);
+}
+
+
+img {
+    height: 100px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
