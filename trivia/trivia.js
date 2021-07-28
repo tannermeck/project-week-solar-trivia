@@ -3,12 +3,13 @@ import planets from '../data/data.js';
 import { getById } from '../storage-utils/helpers.js';
 
 getProfile();
-
+const title = document.getElementById('title');
 const question = document.getElementById('question');
 const answerForm = document.getElementById('answer-form');
 const searchParams = new URLSearchParams(window.location.search);
 
 const planet = getById(planets, +searchParams.get('planetId'));
+title.textContent = planet.title;
 question.textContent = planet.question;
 
 for (let choice of planet.choices){
@@ -17,6 +18,7 @@ for (let choice of planet.choices){
     radio.type = 'radio';
     radio.value = choice.id;
     radio.name = 'answer';
+    radio.required = 'required';
     span.textContent = choice.answer;
     const label = document.createElement('label');
     label.append(radio, span);
@@ -36,11 +38,11 @@ answerForm.addEventListener('submit', (e) => {
         const selectionAnswer = getById(planet.choices, selection).answer;
         results.textContent = `You guessed ${selectionAnswer}, the correct answer is ${correctAnswer}`;
     }
-    getProfile();
     const link = document.getElementById('return');
     link.classList.remove('hide');
     const user = getUser();
     user.completed.push(planet.id);
     setUser(user);
+    getProfile();
 });
 

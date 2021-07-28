@@ -17,7 +17,8 @@ export function getProfile() {
 
     nameLi.textContent = user.name;
     avatar.src = `../assets/${user.race}.png`;
-    scoreLi.textContent = user.score;
+    let userScore = Math.floor((user.score / user.completed.length) * 100);
+    scoreLi.textContent = (userScore || '0') + '%';
 }
 export function incrementScore(){
     const user = getUser();
