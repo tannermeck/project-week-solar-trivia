@@ -8,7 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/home.css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
    
     <title>Space Trivia</title>
 </head>
@@ -16,9 +18,18 @@
 <body>
     <div id="container">
     <header>
-        <a href="./about/index.html">About the developers</a>
+        
     </header>
     <main>
+        <h1>Welcome to Solar-rama! The trivia game!</h1>
+
+        <section id="rules">
+            <h2>Rules to the game</h2>
+            <p>We have questions, you get to choose an answer. Are you correct? Find out!</p>
+            <p>Jump into our space ship and explore into unknown territory by helping us solve the mysteries of our solar system.
+            </p>
+            <p>Place a high score and you will make it to the leaderboard!</p>
+        </section>
 
         <section id="form">
 
@@ -26,28 +37,33 @@
                 <label for="name">
                     <input type="text" placeholder="enter user name" name="name" required>
                 </label>
-                <input type="radio" name="race" id="alien" value="alien" required>
-                    <label for="alien">Alien</label>
-                    <img src="./assets/alien.png">
-                <input type="radio" name="race" id="humanoid" value="humanoid" required>
-                    <label for="humanoid">Humanoid</label>
-                    <img src="./assets/humanoid.png">
-                <input type="radio" name="race" id="bug" value="bug" required>
-                    <label for="bug">Bug</label>
-                    <img src="assets/bug.png">
+
+                <fieldset id="avatars">
+                    <p>Choose your character</p>
+                        <label for="alien" id="alien-label"> 
+                            <input type="radio" name="race" id="alien" value="alien" required>
+                            <img src="./assets/alien.png" id="alien-image" class="notSelectedColor">
+                        </label>
+                        <label for="humanoid" id="human-label">
+                            <input type="radio" name="race" id="humanoid" value="humanoid" required>
+                            <img src="./assets/humanoid.png" id="human-image" class="notSelectedColor">
+                        </label>
+                        <label for="bug" id="bug-label">
+                            <input type="radio" name="race" id="bug" value="bug" required>
+                            <img src="assets/bug.png" id="bug-image" class="notSelectedColor">
+                        </label>
+                </fieldset>
+
                 <button type="submit">Test your knowledge!</button>
                 </form>
                 
         </section>
-
-        <section id="rules">
-            <h1>Rules to the game</h1>
-            <p>We have questions, you get to choose one of four answers. Are you correct? Find out!</p>
-            <p>Jump into our space ship and explore into unknown territory by helping us solve the mysteries of our solar system.
-            </p>
-        </section>
         
     </main>
+
+    <section id="about-link">
+        <a href="./about/index.html">About the developers</a>
+    </section>
 
     <footer>
         <p>Space Trivia || Final Project &copy; 2021<br>
