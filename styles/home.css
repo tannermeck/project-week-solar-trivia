@@ -1,3 +1,118 @@
+ /* font-family: 'Press Start 2P', cursive;  */
+h1 {
+    font-size: 2.4em;
+    text-align: center;
+    padding: 30px 0;
+}
+
+h2 {
+    font-size: 1.8em;
+    text-align: center;
+    padding: 10px 0;
+}
+
 img {
     width: 50px;
+    box-shadow: white 0px 0px 25px;
+    border-radius: 50%;
+    max-width: 100%;
+    max-width: 100%;
+    background-image: url('../assets/earth.png');
 }
+
+p {
+    text-align: center;
+    padding: 5px 0;
+}
+
+@media (min-width: 1100px) {
+
+    #container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
+
+header {
+    text-align: center;
+}
+
+body {
+    background-color: aqua;
+    margin-bottom: 75px;
+}
+
+#about-link {
+    text-align: center;
+    /* margin-bottom: 150px; */
+}
+
+#form {
+    margin: 10px 0;
+    /* padding: 100px 0; */
+    display: flex;
+    background-color: rgb(234, 156, 55);
+}
+
+#user-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+}
+
+fieldset {
+    padding: 25px 0;
+}
+
+
+footer {
+    text-align: center;
+    height: 75px;
+    position: fixed;
+    bottom: 0;
+    background-color: aliceblue;
+    width: 100vw;
+    left: 0;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+input[type=radio]:checked + img {
+    border: 1px solid white;
+}
+
+input[type=radio]:checked + #alien-image {
+    background-color: greenyellow;
+}
+
+input[type=radio]:checked + #bug-image {
+    background-color: rgb(245, 75, 24);
+}
+
+label {
+    display: inline-block;
+    min-height: 80px;
+    min-width: 80px;
+}
+.small-label {
+    display: inline;
+    min-height: auto;
+    min-width: auto;
+}
+.selected-earth {
+    background-image: url('../assets/earth.png');
+    background-size: 51px;
+    padding-left: 0.5px;
+    background-repeat: no-repeat;
+}
+
+.notSelectedColor {
+    background-color: white;
+}
+
+
+
+

@@ -1,13 +1,61 @@
+html {
+    background-color: black;
+}
+body {
+    background-image: url(../assets/links.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 100vh;
+    min-width: 100vw;
+};
+header {
+    color: white;
+    margin: 0 auto;
+}
 li img {
     max-width: 50px;
+    background-color:white;
+    border-radius: 50%;
 }
-ul li {
+ul {
     list-style-type: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 ul {
     display: flex;
 }
 body {
-    background-image: url('../assets/links-background.jpg');
+    max-width: 1100px;
+}
+img {
+    max-width: 100%;
+}
+
+h1, a {
+    color: white;
+}
+h1 {
+    font-size: 2.4em;
+    text-align: center;
+    padding: 30px 0;
+}
+a {
+    padding: 10px;
+    text-align: center;
+}
+#planet-options {
+    margin: 200px 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+footer {
+    color: white;
+    text-align: center;
 }
