@@ -1,4 +1,9 @@
  /* font-family: 'Press Start 2P', cursive;  */
+button {
+    border: 3px solid black;
+    box-shadow: 0 0 7px 3px black;
+}
+
 h1 {
     font-size: 2.4em;
     text-align: center;
@@ -6,9 +11,10 @@ h1 {
 }
 
 h2 {
-    font-size: 1.8em;
     text-align: center;
     padding: 10px 0;
+    font-family: 'Press Start 2P';
+    font-size: 1.5em;
 }
 
 img {
@@ -38,8 +44,7 @@ header {
 }
 
 body {
-    background-color: aqua;
-    margin-bottom: 75px;
+    background-image: url(../assets/home_bg.jpg);
 }
 
 #about-link {
@@ -51,7 +56,6 @@ body {
     margin: 10px 0;
     /* padding: 100px 0; */
     display: flex;
-    background-color: rgb(234, 156, 55);
 }
 
 #user-form {
@@ -68,12 +72,33 @@ fieldset {
 
 footer {
     text-align: center;
-    height: 75px;
     position: fixed;
     bottom: 0;
     background-color: aliceblue;
     width: 100vw;
     left: 0;
+}
+
+footer p {
+    line-height: 1.5em;
+}
+
+main {
+    color: white;
+}
+
+#choose-your-character {
+    font-size: larger;
+    padding-bottom: 20px;
+}
+
+#rules {
+    border: white solid 3px;
+    background-color: black;
+    opacity: 90%;
+    margin-bottom: 60px;
+    box-shadow: 0 0 7px 3px;
+    padding-bottom: 20px;
 }
 
 input[type=radio] {
@@ -97,11 +122,17 @@ label {
     min-height: 80px;
     min-width: 80px;
 }
+
+
+
 .small-label {
     display: inline;
     min-height: auto;
     min-width: auto;
+    border: 3px solid black;
+    box-shadow: 0 0 7px 3px black;
 }
+
 .selected-earth {
     background-image: url('../assets/earth.png');
     background-size: 51px;
@@ -113,6 +144,14 @@ label {
     background-color: white;
 }
 
+#about-the-developers {
+    text-decoration: none;
+}
+
+#about-the-developers:hover {
+    font-size: large;
+    color: darkblue;
+} 
 
 
 

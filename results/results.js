@@ -1,6 +1,7 @@
 import { getLeaderboard, getUser, setUser, setLeaderboard } from '../storage-utils/storage-utils.js';
 
 const olList = document.getElementById('high-scores');
+const userScore = document.getElementById('user-score');
 
 const user = getUser();
 
@@ -13,6 +14,8 @@ if (user) {
 setUser(null);
 
 setLeaderboard(leaderboard);
+
+userScore.textContent = `${user.name}, Your score is ${user.score}0%`;
 
 const sortedLeaderBoard = leaderboard.sort(function(a, b){
     return b.score - a.score;
