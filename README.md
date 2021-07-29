@@ -19,5 +19,5 @@ A list of any libraries, frameworks, or packages that your application requires 
 1. Greg Gilliam
 1. Paul Brubaker
 
-## Source for images and information: NASA
+## Source for images and information: NASA.gov
 
