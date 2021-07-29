@@ -163,7 +163,7 @@ const pluto = {
     id: 10,
     title: 'Pluto-troll',
     question: `Why is Pluto not a planet anymore?`,
-    correct: 3,
+    correct: 1,
     choices: [{
         id: 1,
         answer: `Pluto is too close to other planets`,

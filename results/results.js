@@ -11,11 +11,12 @@ if (user) {
     leaderboard.push(user);
 }
 
+userScore.textContent = `${user.name}, Your score is ${user.score}0%`;
+
 setUser(null);
 
 setLeaderboard(leaderboard);
 
-userScore.textContent = `${user.name}, Your score is ${user.score}0%`;
 
 const sortedLeaderBoard = leaderboard.sort(function(a, b){
     return b.score - a.score;
@@ -27,7 +28,7 @@ for (let leader of topTen){
     const li = document.createElement('li');
     const image = document.createElement('img');
     image.src = `../assets/${leader.race}.png`;
-    li.textContent = `${leader.name} | ${leader.race} | ${leader.score}0%`;
+    li.textContent = `${leader.name.toUpperCase()} | ${leader.race.toUpperCase()} | ${leader.score}0%`;
     olList.appendChild(li);
     olList.appendChild(image);
 }
