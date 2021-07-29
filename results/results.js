@@ -11,7 +11,7 @@ if (user) {
     leaderboard.push(user);
 }
 
-userScore.textContent = `${user.name}, Your score is ${user.score}0%`;
+userScore.textContent = `${user.name.toUpperCase()}, Your score is ${user.score}0%`;
 
 setUser(null);
 
