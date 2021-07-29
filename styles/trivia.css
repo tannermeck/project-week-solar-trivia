@@ -1,3 +1,15 @@
+html {
+    background-color: black;
+}
+body {
+    color: white;
+    background-image: url(../assets/blackHole.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 100vh;
+    min-width: 100vw;
+};
+
 li img {
     max-width: 50px;
 }
@@ -20,12 +32,24 @@ ul {
     display: flex;
     flex-direction: column;
     font-size: 1.7em;
-    margin: 100px 0 75px 0;
+    margin: 0px 0 50px 0;
+    border: dashed 2px white;
+    padding: 20px;
+    background-color: black;
+    opacity: 84%;
+}
+
+label {
+    padding: 10px 0;
+}
+label:first-child {
+    margin-top: 20px;
 }
 
 h1 {
+    font-family: 'Press Start 2P';
     font-size: 2.5em;
-    margin: 20px 0;
+    margin: 50px 0;
     text-align: center;
 }
 
@@ -48,11 +72,6 @@ footer {
     }
 }
 
-body {
-    color: white;
-    background-image: url(../assets/blackHole.jpg);
-}
-
 img {
     width: 50px;
     box-shadow: white 0px 0px 25px;
@@ -60,15 +79,36 @@ img {
     background-color: white;
 }
 
-form {
-    /* align-items: center; */
+#trivia-question {
+    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 100px;
 }
 
 #submit {
-    max-width: 200px;
-    align-content: center;
-    
+    width: 100px;
 }
+
+#results {
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+
+#return {
+    font-size: 1.5em;
+}
+
+#return{
+    text-decoration: none;
+    color: rgb(240, 252, 7);
+    border: 2px white dashed;
+    padding: 2px;
+}
+
+#return:hover {
+    font-size: 2.1em;
+    color: rgb(109, 254, 13);
+} 
