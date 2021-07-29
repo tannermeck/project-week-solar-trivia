@@ -15,7 +15,7 @@ export function getProfile() {
     const avatar = document.getElementById('player-img');
     const scoreLi = document.getElementById('player-score');
 
-    nameLi.textContent = user.name;
+    nameLi.textContent = user.name.toUpperCase();
     avatar.src = `../assets/${user.race}.png`;
     let userScore = Math.floor((user.score / user.completed.length) * 100);
     scoreLi.textContent = (userScore || '0') + '%';
