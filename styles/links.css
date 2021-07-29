@@ -3,13 +3,10 @@ html {
 }
 body {
     background-image: url(../assets/links.jpg);
-    /* position: relative; */
     background-repeat: no-repeat;
     background-size: 100%;
     min-height: 100vh;
     min-width: 100vw;
-    /* max-width: 100%;
-    max-height: auto; */
 };
 header {
     color: white;
@@ -37,15 +34,6 @@ ul {
 body {
     max-width: 1100px;
 }
-
-/* @media (min-width: 1100px) {
-
-    #container {
-        max-width: 900px;
-        margin: 0 auto;
-    }
-} */
-
 img {
     max-width: 100%;
 }
@@ -66,4 +54,8 @@ a {
     margin: 200px 10px;
     display: flex;
     justify-content: space-evenly;
+}
+footer {
+    color: white;
+    text-align: center;
 }
