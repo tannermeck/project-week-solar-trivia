@@ -4,29 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/results.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Results</title>
 </head>
 <body>
 
     <header>
         <h1>Leader Board</h1>
-        <h3>HIGH SCORES</h3>
+        <h3>Your Score:</h3>
+        <p id="user-score"></p>
     </header>
-
+    
     <main>
-        <section>
-            <p id="user-score"></p>
+        <section id="score-section">
+            <h3>HIGH SCORES</h3>
             <ol id="high-scores">
 
             </ol>
-            <a href="../index.html">Start Over</a>
-    </main>
-
+        </section>
+        </main>
+        
+        <script src="./results.js" type="module"></script>
+    </body>
     <footer>
-        <p>Space Trivia || Final Project &copy; 2021<br>
-            Tanner Meck || Simon Kaine || Paul Brubaker || Greg Gilliam</p>
-    </footer>
-    <script src="./results.js" type="module"></script>
-</body>
+    <a href="../index.html">Start Over</a>
+    <p>Space Trivia || Final Project &copy; 2021<br>
+        Tanner Meck || Simon Kaine || Paul Brubaker || Greg Gilliam</p>
+</footer>
 </html>
