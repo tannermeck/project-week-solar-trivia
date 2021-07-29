@@ -7,6 +7,8 @@ const title = document.getElementById('title');
 const question = document.getElementById('question');
 const answerForm = document.getElementById('answer-form');
 const searchParams = new URLSearchParams(window.location.search);
+const winSound = document.getElementById('winning-sound');
+const losingSound = document.getElementById('losing-sound');
 
 const planet = getById(planets, +searchParams.get('planetId'));
 title.textContent = planet.title;
@@ -33,10 +35,13 @@ answerForm.addEventListener('submit', (e) => {
     if (planet.correct === selection){
         incrementScore();
         results.textContent = 'You guessed right!';
+        winSound.play();
+        
     } else {
         const correctAnswer = getById(planet.choices, planet.correct).answer;
         const selectionAnswer = getById(planet.choices, selection).answer;
         results.textContent = `You guessed ${selectionAnswer}, the correct answer is ${correctAnswer}`;
+        losingSound.play();
     }
     const link = document.getElementById('return');
     link.classList.remove('hide');
