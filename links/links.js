@@ -17,13 +17,15 @@ function createLink(planet) {
     const planetOptions = document.getElementById('planet-options');
     const planetLink = document.createElement('a');
 
+    planetLink.style.color = 'yellowgreen';
     planetLink.textContent = planet.title;
     planetOptions.appendChild(planetLink);
 
     if (!user.completed.includes(planet.id)) {
         const planetUrl = `../trivia/?planetId=${planet.id}`;
         planetLink.href = planetUrl;
-    }
+        planetLink.style.color = 'white';
+    } 
 }
 
 

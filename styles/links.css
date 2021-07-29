@@ -6,8 +6,15 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     min-height: 100vh;
-    min-width: 100vw;
-};
+    /* min-width: 100vw; */
+}
+@media (min-width: 1100px) {
+
+    #container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
 header {
     color: white;
     margin: 0 auto;
@@ -28,6 +35,10 @@ ul {
     margin-right: 50px;
 }
 
+a:visited {
+    color: greenyellow;
+}
+
 ul {
     display: flex;
 }
@@ -40,20 +51,37 @@ img {
 
 h1, a {
     color: white;
+    font-family: 'Press Start 2P';
+
+}
+
+a:hover {
+    cursor:crosshair;
 }
 h1 {
-    font-size: 2.4em;
+    font-size: 2em;
     text-align: center;
     padding: 30px 0;
+    font-family: 'Press Start 2P';
 }
 a {
     padding: 10px;
     text-align: center;
+    font-size: 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin: 20px; */
 }
 #planet-options {
     margin: 200px 10px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    border: 2px solid green;
     justify-content: space-evenly;
+    background-color: orange;
+    word-wrap: wrap;
+    max-width: 1100px;
 }
 footer {
     color: white;
