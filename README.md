@@ -19,5 +19,13 @@ A list of any libraries, frameworks, or packages that your application requires 
 1. Greg Gilliam
 1. Paul Brubaker
 
-## Source for images and information: NASA.gov
+## Description of the project
+* Our project was designed as a method to introduce new concepts to individuals looking to gain knowledge of the solar system.
+
+## Libraries, frameoworks, packages
+
+JAVASCRIPT, CSS, 
+[MiroBoard] <img src="../assets/miro-board.png">
+
+## Source for images and information: (displayed on miro board)
 

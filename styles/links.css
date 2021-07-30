@@ -2,11 +2,10 @@ html {
     background-color: black;
 }
 body {
-    /* background-image: url(../assets/links.jpg); */
+    margin: auto;
     background-repeat: no-repeat;
     background-size: 100%;
     min-height: 100vh;
-    /* min-width: 100vw; */
 }
 @media (min-width: 1100px) {
 
@@ -17,6 +16,7 @@ body {
 }
 .planet-container {
     min-width: 100px;
+    text-transform: capitalize;
 }
 div:nth-child(7) {
     min-width: 140px;
@@ -58,7 +58,7 @@ img {
 h1, a {
     color: white;
     font-family: 'Press Start 2P';
-
+    
 }
 a:hover {
     cursor:crosshair;
@@ -70,15 +70,11 @@ h1 {
     font-family: 'Press Start 2P';
 }
 a {
-    /* padding: 10px; */
     text-align: center;
     font-size: .7em;
     display: inline-block;
     margin: 0 auto;
     width: 100%;
-    /* display: flex; */
-    /* flex-direction: row;
-    justify-content: space-between; */
 }
 #planet-options {
     margin: 200px 10px;
@@ -98,4 +94,13 @@ footer {
     width: 100%;
     text-align: center;
     padding-bottom: 5px;
+}
+@media (min-width: 600px) and (max-width: 1200px){
+    #planet-options {
+        flex-wrap: wrap;
+}
+    .planet-container {
+        max-width: 140px;
+
+    }
 }
