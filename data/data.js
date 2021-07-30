@@ -1,6 +1,6 @@
 const sun = {
     id: 1,
-    title: 'Sun',
+    title: 'sun',
     question: `How many Earth's fit inside the sun?`,
     correct: 4,
     choices: [{
@@ -20,7 +20,7 @@ const sun = {
 
 const mercury = {
     id: 2,
-    title: 'Mercury',
+    title: 'mercury',
     question: `How many moons does Mercury have?`,
     correct: 2,
     choices: [{
@@ -40,7 +40,7 @@ const mercury = {
 
 const venus = {
     id: 3,
-    title: 'Venus',
+    title: 'venus',
     question: `One day on Venus is equal to how many Earth days?`,
     correct: 2,
     choices: [{
@@ -59,7 +59,7 @@ const venus = {
 };
 const earth = {
     id: 4,
-    title: 'Earth',
+    title: 'earth',
     question: `True or False? There are more Stars then grains of sand on Earth?`,
     correct: 1,
     choices: [{
@@ -72,7 +72,7 @@ const earth = {
 };
 const mars = {
     id: 5,
-    title: 'Mars',
+    title: 'mars',
     question: `Borealis Basin (the Grand Canyon of Mars) covers what percentage of the surface of Mars?`,
     correct: 1,
     choices: [{
@@ -91,7 +91,7 @@ const mars = {
 };
 const jupiter = {
     id: 6,
-    title: 'Jupiter',
+    title: 'jupiter',
     question: `Jupiter has a giant storm called "The great red spot" that has been raging for at least 150 Earth years and is ____ times wider than Earth itself?`,
     correct: 3,
     choices: [{
@@ -110,7 +110,7 @@ const jupiter = {
 };
 const saturn = {
     id: 7,
-    title: 'Saturn',
+    title: 'saturn',
     question: `In 1610, which astronomer was the first to gaze at Saturn through a telescope?`,
     correct: 2,
     choices: [{
@@ -129,7 +129,7 @@ const saturn = {
 };
 const uranus = {
     id: 8,
-    title: 'Uranus',
+    title: 'uranus',
     question: `True or False? Uranus is the coldest planet in our solar system?`,
     correct: 1,
     choices: [{
@@ -142,7 +142,7 @@ const uranus = {
 };
 const neptune = {
     id: 9,
-    title: 'Neptune',
+    title: 'neptune',
     question: `What windspeed does Neptune's solar system storm's move frozen clouds of methane across the planet?`,
     correct: 3,
     choices: [{
@@ -161,7 +161,7 @@ const neptune = {
 };
 const pluto = {
     id: 10,
-    title: 'Pluto',
+    title: 'pluto',
     question: `Why is Pluto not a planet anymore?`,
     correct: 1,
     choices: [{
