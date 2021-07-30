@@ -34,7 +34,7 @@ function createLink(planet) {
         planetLink.href = planetUrl;
         planetLink.style.color = 'white';
     } 
-    if (planet.title === 'Saturn') {
+    if (planet.title === 'saturn') {
         planetContainer.id = 'saturn';
     }
 }
