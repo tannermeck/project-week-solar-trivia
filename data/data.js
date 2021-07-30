@@ -60,7 +60,7 @@ const venus = {
 const earth = {
     id: 4,
     title: 'earth',
-    question: `True or False? There are more Stars then grains of sand on Earth?`,
+    question: `True or False? Each grain of sand on Earth represents more than 10,000 stars in the known universe.`,
     correct: 1,
     choices: [{
         id: 1,
@@ -92,7 +92,7 @@ const mars = {
 const jupiter = {
     id: 6,
     title: 'jupiter',
-    question: `Jupiter has a giant storm called "The great red spot" that has been raging for at least 150 Earth years and is ____ times wider than Earth itself?`,
+    question: `Jupiter has a giant storm called "The great red spot" that has been raging for at least 150 Earth years and is currently ____ times wider than Earth itself?`,
     correct: 3,
     choices: [{
         id: 1,

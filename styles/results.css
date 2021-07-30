@@ -1,8 +1,12 @@
 body {
     background-image: url(../assets/results_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
     color: white;
     text-align: center;
 }
+
 img {
     width: 30px;
     background-color: white;
@@ -24,6 +28,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 #score-section {

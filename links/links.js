@@ -21,7 +21,6 @@ function createLink(planet) {
     planetContainer.classList.add('planet-container');
     planetLink.style.color = 'yellowgreen';
     planetLink.textContent = planet.title;
-    
 
     const planetImage = document.createElement('img');
 
