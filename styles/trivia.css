@@ -55,11 +55,10 @@ h1 {
 
 footer {
     text-align: center;
-    color:black;
-    background-color: aliceblue;
+    color:white;
+    background-color: black;
     position: fixed;
     bottom: 0;
-    background-color: aliceblue;
     width: 100vw;
     left: 0;
 }
@@ -112,3 +111,11 @@ img {
     font-size: 2.1em;
     color: rgb(109, 254, 13);
 } 
+
+button:hover {
+    cursor: crosshair;
+}
+
+a:hover {
+    cursor: crosshair;
+}

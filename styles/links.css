@@ -1,22 +1,42 @@
 html {
     background-color: black;
 }
+
 body {
-    background-image: url(../assets/links.jpg);
+    margin: auto;
     background-repeat: no-repeat;
     background-size: 100%;
     min-height: 100vh;
-    min-width: 100vw;
-};
+}
+
+@media (min-width: 1100px) {
+
+    #container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
+
+.planet-container {
+    min-width: 100px;
+    text-transform: capitalize;
+}
+
+div:nth-child(7) {
+    min-width: 140px;
+}
+
 header {
     color: white;
     margin: 0 auto;
 }
+
 li img {
     max-width: 50px;
     background-color:white;
     border-radius: 50%;
 }
+
 ul {
     list-style-type: none;
     color: white;
@@ -28,33 +48,57 @@ ul {
     margin-right: 50px;
 }
 
+a:visited {
+    color: greenyellow;
+}
+
 ul {
     display: flex;
 }
+
 body {
     max-width: 1100px;
 }
+
 img {
     max-width: 100%;
 }
 
 h1, a {
     color: white;
+    font-family: 'Press Start 2P';
+    
 }
+a:hover {
+    cursor:crosshair;
+}
+
 h1 {
-    font-size: 2.4em;
+    font-size: 2em;
     text-align: center;
     padding: 30px 0;
+    font-family: 'Press Start 2P';
 }
+
 a {
-    padding: 10px;
     text-align: center;
+    font-size: .7em;
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
 }
+
 #planet-options {
     margin: 200px 10px;
     display: flex;
     justify-content: space-evenly;
 }
+
+#saturn {
+    min-width: 180px;
+    align-items: center;
+}
+
 footer {
     color: white;
     text-align: center;
@@ -64,4 +108,14 @@ footer {
     width: 100%;
     text-align: center;
     padding-bottom: 5px;
+}
+
+@media (min-width: 600px) and (max-width: 1200px){
+    #planet-options {
+        flex-wrap: wrap;
+}
+    .planet-container {
+        max-width: 140px;
+
+    }
 }

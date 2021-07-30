@@ -1,16 +1,7 @@
 ## Read me instructions
 
-At a minimum, your README.md should include the following:
-
-The name of the project
-Names of the team members
-A description of the project
-The overall problem domain and how the project solves those problems
-A list of any libraries, frameworks, or packages that your application requires in order to properly function. If needed, provide instructions that the user may need to follow in order to get your application up and running on their own computer.
-
-
 # Project name
-* Space Trivia
+* Solar-ama!
 
 ## Team members 
 
@@ -19,5 +10,32 @@ A list of any libraries, frameworks, or packages that your application requires 
 1. Greg Gilliam
 1. Paul Brubaker
 
-## Source for images and information: NASA.gov
+## Description of the project
+* Our project was designed as a method to introduce new concepts to individuals looking to gain knowledge of our solar system.
 
+## Libraries, frameoworks, packages
+
+JAVASCRIPT, CSS, HTML
+MiroBoard <img src="https://github.com/tannermeck/project-week-solar-trivia/blob/tanner-day-1/assets/miro-board.png">
+
+## Source for images and information: (displayed on miro board)
+
+* https://www.nasa.gov
+
+* https://miro.com/app/board/o9J_l5Y8cQQ=/?moveToWidget=3074457361797802353&cot=14
+
+* https://miro.com/app/board/o9J_l5Y8cQQ=/?moveToWidget=3074457361798476067&cot=14
+
+* https://www.space.com/15988-venus-planet-weird-facts.html
+
+* https://miro.com/app/board/o9J_l5Y8cQQ=/?moveToWidget=3074457361847172961&cot=14
+
+* https://miro.com/app/board/o9J_l5Y8cQQ=/?moveToWidget=3074457361943101105&cot=14
+
+* https://miro.com/app/board/o9J_l5Y8cQQ=/?moveToWidget=3074457361857777563&cot=14
+
+* https://wallpaperaccess.com/solar-system-planets
+
+* https://www.nasa.gov/multimedia/imagegallery/iotd.html
+
+* https://www.space.com/32272-top-5-weird-facts-about-mysterious-uranus-photos.html

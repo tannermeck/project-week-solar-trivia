@@ -1,7 +1,10 @@
- /* font-family: 'Press Start 2P', cursive;  */
 button {
     border: 3px solid black;
     box-shadow: 0 0 7px 3px black;
+}
+
+button:hover {
+    cursor: crosshair;
 }
 
 h1 {
@@ -49,12 +52,10 @@ body {
 
 #about-link {
     text-align: center;
-    /* margin-bottom: 150px; */
 }
 
 #form {
     margin: 10px 0;
-    /* padding: 100px 0; */
     display: flex;
 }
 
@@ -68,7 +69,6 @@ body {
 fieldset {
     padding: 25px 0;
 }
-
 
 footer {
     text-align: center;
@@ -123,7 +123,9 @@ label {
     min-width: 80px;
 }
 
-
+input[type=radio]:hover + img{
+    cursor: crosshair;
+}
 
 .small-label {
     display: inline;

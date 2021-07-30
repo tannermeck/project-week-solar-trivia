@@ -11,7 +11,7 @@ const winSound = document.getElementById('winning-sound');
 const losingSound = document.getElementById('losing-sound');
 
 const planet = getById(planets, +searchParams.get('planetId'));
-title.textContent = planet.title;
+title.textContent = planet.title.toUpperCase();
 question.textContent = planet.question;
 
 for (let choice of planet.choices){
