@@ -1,6 +1,6 @@
 const sun = {
     id: 1,
-    title: 'The Sun',
+    title: 'Sun',
     question: `How many Earth's fit inside the sun?`,
     correct: 4,
     choices: [{
@@ -161,7 +161,7 @@ const neptune = {
 };
 const pluto = {
     id: 10,
-    title: 'Pluto-troll',
+    title: 'Pluto',
     question: `Why is Pluto not a planet anymore?`,
     correct: 1,
     choices: [{
