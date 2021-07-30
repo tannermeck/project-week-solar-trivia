@@ -16,16 +16,27 @@ for (let planet of planets) {
 function createLink(planet) {
     const planetOptions = document.getElementById('planet-options');
     const planetLink = document.createElement('a');
-
+    const planetContainer = document.createElement('div');
+    
+    planetContainer.classList.add('planet-container');
     planetLink.style.color = 'yellowgreen';
     planetLink.textContent = planet.title;
-    planetOptions.appendChild(planetLink);
+    
+
+    const planetImage = document.createElement('img');
+
+    planetImage.src = `../assets/chopped/${planet.title}.png`;
+    planetContainer.append(planetImage, planetLink);
+    planetOptions.append(planetContainer);
 
     if (!user.completed.includes(planet.id)) {
         const planetUrl = `../trivia/?planetId=${planet.id}`;
         planetLink.href = planetUrl;
         planetLink.style.color = 'white';
     } 
+    if (planet.title === 'Saturn') {
+        planetContainer.id = 'saturn';
+    }
 }
 
 
