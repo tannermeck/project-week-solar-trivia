@@ -25,7 +25,7 @@ A list of any libraries, frameworks, or packages that your application requires 
 ## Libraries, frameoworks, packages
 
 JAVASCRIPT, CSS, 
-[MiroBoard] <img src="../assets/miro-board.png">
+MiroBoard <img src="https://github.com/tannermeck/project-week-solar-trivia/blob/tanner-day-1/assets/miro-board.png">
 
 ## Source for images and information: (displayed on miro board)
 
