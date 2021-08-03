@@ -35,7 +35,6 @@ p {
 }
 
 @media (min-width: 1100px) {
-
     #container {
         max-width: 900px;
         margin: 0 auto;
@@ -104,19 +103,19 @@ main {
     padding-bottom: 20px;
 }
 
-input[type=radio] {
+input[type='radio'] {
     display: none;
 }
 
-input[type=radio]:checked + img {
+input[type='radio']:checked + img {
     border: 1px solid white;
 }
 
-input[type=radio]:checked + #alien-image {
+input[type='radio']:checked + #alien-image {
     background-color: greenyellow;
 }
 
-input[type=radio]:checked + #bug-image {
+input[type='radio']:checked + #bug-image {
     background-color: rgb(245, 75, 24);
 }
 
@@ -126,7 +125,7 @@ label {
     min-width: 80px;
 }
 
-input[type=radio]:hover + img{
+input[type='radio']:hover + img {
     cursor: crosshair;
 }
 
@@ -145,6 +144,7 @@ input[type=radio]:hover + img{
     background-repeat: no-repeat;
 }
 
+/* be consistent with your casing -- either use kabob or camel */
 .notSelectedColor {
     background-color: white;
 }
@@ -156,7 +156,4 @@ input[type=radio]:hover + img{
 #about-the-developers:hover {
     font-size: large;
     color: darkblue;
-} 
-
-
-
+}

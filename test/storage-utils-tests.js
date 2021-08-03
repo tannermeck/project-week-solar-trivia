@@ -1,4 +1,8 @@
-import { incrementScore, setUser, getUser } from '../storage-utils/storage-utils.js';
+import {
+    incrementScore,
+    setUser,
+    getUser,
+} from '../storage-utils/storage-utils.js';
 import { createUser } from '../data/create-user.js';
 
 const test = QUnit.test;
@@ -15,7 +19,7 @@ test('test whether the score is incremented by 1 when incrementScore is called',
 
     incrementScore();
     const actual = getUser();
-    //Act 
+    //Act
     // Call the function you're testing and set the result to a const
     const expected = {
         name: 'tanner',
@@ -29,29 +33,20 @@ test('test whether the score is incremented by 1 when incrementScore is called',
 });
 
 test('Tests for GetUser function', (expect) => {
-
     const user = {
         name: 'tanner',
         race: 'alien',
         score: 0,
-        completed: []
+        completed: [],
     };
     setUser(user);
 
     const actual = getUser();
 
-    const expected = {
-        name: 'tanner',
-        race: 'alien',
-        score: 0,
-        completed: []
-    };
-
-    expect.deepEqual(actual, expected);
+    expect.deepEqual(actual, user);
 });
 
 test('Tests for createUser function', (expect) => {
-    
     const fakeForm = new FormData();
 
     fakeForm.set('name', 'tanner');
@@ -63,7 +58,7 @@ test('Tests for createUser function', (expect) => {
         name: 'tanner',
         race: 'alien',
         score: 0,
-        completed: []
+        completed: [],
     };
 
     expect.deepEqual(actual, expected);

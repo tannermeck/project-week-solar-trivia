@@ -3,6 +3,13 @@ import { getLeaderboard, getUser, setUser, setLeaderboard } from '../storage-uti
 const olList = document.getElementById('high-scores');
 const userScore = document.getElementById('user-score');
 
+// I would maybe move the logic of adding the user to the 
+// leaderboard, to the same place where you check if the
+// user has completed all the questions
+
+// I would also possibly allow users to view this page without
+// going all the way through the quest
+
 const user = getUser();
 
 let leaderboard = getLeaderboard();
@@ -17,6 +24,10 @@ setUser(null);
 
 setLeaderboard(leaderboard);
 
+
+// if you move this into a function like renderLeaderBoard
+// you could also render the leaderBoard on the homepage to 
+// allow people to see what score they should shoot for
 
 const sortedLeaderBoard = leaderboard.sort(function(a, b){
     return b.score - a.score;
