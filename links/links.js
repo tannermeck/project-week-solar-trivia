@@ -7,12 +7,14 @@ const user = getUser();
 
 if (user.completed.length === planets.length) {
     window.location.replace('../results');
+    // possibly add in the logic here to add user to the leaderboard
 }
 
 for (let planet of planets) {
     createLink(planet);
 }
 
+// move this to a new file to keep this file nice and simple
 function createLink(planet) {
     const planetOptions = document.getElementById('planet-options');
     const planetLink = document.createElement('a');

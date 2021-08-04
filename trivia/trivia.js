@@ -1,8 +1,8 @@
 import { getProfile, incrementScore, getUser, setUser } from '../storage-utils/storage-utils.js';
 import planets from '../data/data.js';
 import { getById } from '../storage-utils/helpers.js';
-
 getProfile();
+// I would add a redirect if the user has already answered the question
 const title = document.getElementById('title');
 const question = document.getElementById('question');
 const answerForm = document.getElementById('answer-form');
@@ -10,7 +10,8 @@ const searchParams = new URLSearchParams(window.location.search);
 const winSound = document.getElementById('winning-sound');
 const losingSound = document.getElementById('losing-sound');
 
-const planet = getById(planets, +searchParams.get('planetId'));
+const planet = getById(planets, Number(searchParams.get('planetId')));
+
 title.textContent = planet.title.toUpperCase();
 question.textContent = planet.question;
 
@@ -29,7 +30,7 @@ for (let choice of planet.choices){
 answerForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const selected = new FormData(answerForm);
-    const selection = +selected.get('answer');
+    const selection = Number(selected.get('answer'));
     const results = document.getElementById('results');
     answerForm.classList.add('hide');
     if (planet.correct === selection){
